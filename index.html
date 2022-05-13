@@ -2,15 +2,42 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <script src="jQuery/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
+
+<div id="loader_container">
+    <img alt="" src="img/preview.gif">
+</div>
 <h1>Snake Game</h1>
 <h2>Lets play</h2>
 <canvas id="board"></canvas>
+
+<script>
+    $(window).on('load', function () {
+        console.log("Window Loaded");
+        $("#loader_container").fadeOut(1500);
+    });
+
+
+    $(document).ready(function () {
+        console.log("Document Ready");
+    });
+
+    $(function () {
+        console.log("Document Loaded");
+    });
+
+
+</script>
+
 </body>
 </html>
