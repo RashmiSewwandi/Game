@@ -2,3 +2,8 @@ body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
+h2{
+    color: aqua;
+    font-family: "A araliya";
+    text-decoration-line: underline;
+}
